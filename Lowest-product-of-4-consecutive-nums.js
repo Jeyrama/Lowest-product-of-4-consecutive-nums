@@ -6,3 +6,6 @@ Example:
   lowestProduct("123456789") --> 24 (1x2x3x4)
   lowestProduct("35") --> "Number is too small"
 */
+
+
+// Solution
