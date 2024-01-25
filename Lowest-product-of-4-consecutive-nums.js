@@ -16,3 +16,24 @@ function lowestProduct(input) {
 }
 
 // or
+
+function lowestProduct(input) { 
+  if (input.length < 4) {
+    return "Number is too small";
+  }
+
+  let lowestProduct = Infinity;
+
+  for (let i = 0; i <= input.length - 4; i++) {
+    const product = Number(input[i]) *
+                    Number(input[i + 1]) *
+                    Number(input[i + 2]) *
+                    Number(input[i + 3]);
+
+    if (product < lowestProduct) {
+      lowestProduct = product;
+    }
+  }
+
+  return lowestProduct;
+}
