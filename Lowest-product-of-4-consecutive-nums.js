@@ -9,3 +9,8 @@ Example:
 
 
 // Solution
+
+function lowestProduct(input) {
+  let arr = input.split``.map((x,i,a) => a.length - i < 4 ? Infinity : x * a[i+1] * a[i+2] * a[i+3]);
+  return input < 1000 ? "Number is too small" : Math.min(...arr);
+}
